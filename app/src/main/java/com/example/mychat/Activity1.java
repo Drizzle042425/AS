@@ -67,30 +67,30 @@ public class Activity1 extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("dxy","2:onDestroy...");
+        Log.d("dxy","1:onDestroy...");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("dxy","2:onStop...");
+        Log.d("dxy","1:onStop...");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("dxy","2:onResume...");
+        Log.d("dxy","1:onResume...");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("dxy","2:onStart...");
+        Log.d("dxy","1:onStart...");
     }
 
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        Log.d("dxy","2:onPostResume...");
+        Log.d("dxy","1:onPostResume...");
     }
 }
