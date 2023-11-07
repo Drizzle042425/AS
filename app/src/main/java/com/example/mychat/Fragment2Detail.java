@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,6 +31,13 @@ public class Fragment2Detail extends AppCompatActivity {
         textView2.setText(intent.getStringExtra("song"));
         textView3.setText(intent.getStringExtra("tag"));
         button_r=findViewById(R.id.returnButton);
-
+        button_r.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                setResult(666,intent);
+                finish();
+            }
+        });
     }
 }
